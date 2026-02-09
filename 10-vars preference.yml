@@ -1,0 +1,8 @@
+- name: variables Preference 
+  hosts: local 
+  connection: local
+  vars: 
+   Name: "Ansible from playbook"
+   vars_files:
+   - course.yml
+   
