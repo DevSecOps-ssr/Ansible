@@ -15,9 +15,9 @@
   tasks:
   - name: print variables
     ansible.builtin.debug:
-    msg: |
-      Program:{{PROGRAM}}
-      Duration: {{DUARATION}}
-      Is_Live: {{IS_LIVE}}
-      Details: {{DETAILS}}
-      Topics: {{TOPICS}}
+      msg: |
+        Program:{{PROGRAM}}
+        Duration: {{DUARATION}}
+        Is_Live: {{IS_LIVE}}
+        Details: {{DETAILS}}
+        Topics: {{TOPICS}}
