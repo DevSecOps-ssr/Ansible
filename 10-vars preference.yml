@@ -2,7 +2,17 @@
   hosts: local 
   connection: local
   vars: 
-   Name: "Ansible from playbook"
-   vars_files:
+    Name: "Ansible from Play"
+  vars_files:
    - course.yml
-   
+  vars_prompt:
+   - name: Name
+     prompt: Enter your Name
+     private: false
+  tasks:
+  - name: print name 
+    vars:
+      Name: "Ansible from task"
+    ansible.builtin.debug:
+      msg: "Hi {{Name}}"
+  
