@@ -52,3 +52,7 @@
   - name: convert uppercase
     ansible.builtin.debug:
       msg: "{{course | upper}}"
+
+  - name: convert uppercase
+    ansible.builtin.debug:
+      msg: "{{course | lower}}"
